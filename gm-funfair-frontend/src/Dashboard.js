@@ -131,7 +131,7 @@ const Dashboard = () => {
                     )}
                     {isQRCodeVisible && (
                         <>
-                            <QRCodeCanvas value={`${user.role}:${user.id}`} />
+                            <QRCodeCanvas value={`${user.role}:${user.id}`} /><br/>
                             <Button variant="secondary" onClick={() => setIsQRCodeVisible(false)}>
                                 Back
                             </Button>

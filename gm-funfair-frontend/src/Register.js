@@ -21,7 +21,7 @@ const Register = () => {
 				alert(data.message);
 				localStorage.setItem('token', data.token);
 				localStorage.setItem('user', JSON.stringify(data.account));
-				navigate('/dashboard');
+				window.location.href = '/dashboard';
 			} else {
 				alert(data.message);
 			}
